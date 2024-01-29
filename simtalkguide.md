@@ -2,6 +2,9 @@
 
 - [1 Introduction](#s1-introduction)
 - [2 SimTalk Language Rules](#s2-simtalk-language-rules)
+
+* [2.1 Default Parameter Values](#s2.1-default-parameter-values)
+
 - [3 SimTalk Style Rules](#s2-simtalk-style-rules)
 
 <a id="s1-introduction"></a>
@@ -17,6 +20,10 @@ SimTalk 2.0 enables easier formatting and less code. That’s why this style gui
 <a id="s2-simtalk-language-rules"></a>
 
 ## SimTalk Language Rules
+
+<a id="s2.1-default-parameter-values"></a>
+
+### Default Parameter Values
 
 <a id="s2-simtalk-style-rules"></a>
 
