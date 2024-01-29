@@ -287,6 +287,8 @@ No:
 
 ### 3.12 Comments and Docstrings
 
+<a id="s3.12.1-block-and-inline-comments"></a>
+
 ### 3.12.1 Block and Inline Comments
 
 Comments should be used in tricky parts of code. Do not use the ´--´ operator for comments, instead use ´//´.
@@ -297,6 +299,8 @@ var distance:length := 4 // Minimal distance is 4
 
 distance += (truck.speed / 10) * (truck.speed / 10) // Basic formula for braking distance
 ```
+
+<a id="s3.12.2-docstrings"></a>
 
 ### 3.12.2 Docstrings
 
@@ -319,6 +323,8 @@ The only mandatory part is the method description. Judge if the rest is required
 // Raises:
 // RuntimeError: No truck is given.
 ```
+
+<a id="s3.12.2-todo-comments"></a>
 
 ### 3.12.3 TODO Comments
 
