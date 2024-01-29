@@ -4,9 +4,9 @@
 - [2 SimTalk Language Rules](#s2-simtalk-language-rules)
 
 * [2.1 Default Parameter Values](#s2.1-default-parameter-values)
-* [2.2 Referenced Parameters](#s2.1-referenced-parameters)
-* [2.3 True/False Evaluations](#s2.1-true-false-evaluations)
-* [2.4 Strings](#s2.1-strings)
+* [2.2 Referenced Parameters](#s2.2-referenced-parameters)
+* [2.3 True/False Evaluations](#s2.3-true-false-evaluations)
+* [2.4 Strings](#s2.4-strings)
 * [2.5 Parentheses](#s2.5-parentheses)
 * [2.6 Error Handling](#s2.6-error-handling)
 
