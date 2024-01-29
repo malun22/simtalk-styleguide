@@ -56,6 +56,9 @@ Utilize the `to_str()` method for string formatting, even when all parameters ar
 Yes:
 x = to_str(“root.”, objectName, “.stats”)
 x = object + “.stats”
+```
+
+```python
 No:
 X = “root.” + objectName + “.stats”
 ```
