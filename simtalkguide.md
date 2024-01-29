@@ -5,6 +5,8 @@
 
 * [2.1 Default Parameter Values](#s2.1-default-parameter-values)
 * [2.2 Referenced Parameters](#s2.1-referenced-parameters)
+* [2.2 True/False Evaluations](#s2.1-true-false-evaluations)
+* [2.2 Strings](#s2.1-strings)
 
 - [3 SimTalk Style Rules](#s2-simtalk-style-rules)
 
@@ -39,6 +41,24 @@ If the method is invoked with a single argument, y will be assigned the value of
 ### 2.1 Referenced Parameters
 
 As outlined, utilizing ["byref"](https://docs.sw.siemens.com/de-DE/doc/297028302/PL20230511801658226.PlantSimulation/id56084) allows for passing parameters by reference, enabling direct access to these parameters, which can potentially affect the calling method. It's advisable to exercise caution when using referenced parameters due to their complexity in identification and readability. In the absence of programmatically available classes in SimTalk, consider its application only when a custom class instance would be returned in a higher programming language to maintain clarity and coherence.
+
+<a id="s2.1-true-false-evaluations"></a>
+
+### 2.1 True/False Evaluations
+
+<a id="s2.1-strings"></a>
+
+### 2.1 Strings
+
+Utilize the `to_str()` method for string formatting, even when all parameters are strings. Concatenating two strings with the + operator is permissible. Avoid exceeding this method of string concatenation.
+
+```python
+Yes:
+x = to_str(“root.”, objectName, “.stats”)
+x = object + “.stats”
+No:
+X = “root.” + objectName + “.stats”
+```
 
 <a id="s2-simtalk-style-rules"></a>
 
