@@ -8,7 +8,6 @@
 * [2.3 True/False Evaluations](#s2.3-true-false-evaluations)
 * [2.4 Strings](#s2.4-strings)
 * [2.5 Parentheses](#s2.5-parentheses)
-* [2.6 Error Handling](#s2.6-error-handling)
 
 - [3 SimTalk Style Rules](#s2-simtalk-style-rules)
 
@@ -115,10 +114,6 @@ No:
 truck.getColor()
 truck.driveToHomePosition
 ```
-
-<a id="s2.6-error-handling"></a>
-
-### 2.6 Error Handling
 
 <a id="s2-simtalk-style-rules"></a>
 
