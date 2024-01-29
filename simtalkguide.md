@@ -13,9 +13,17 @@
 - [3 SimTalk Style Rules](#s2-simtalk-style-rules)
 
 * [3.1 Semicolons](#s3.1-semicolons)
-* [3.2 Line Length](#s3.1-line-length)
-* [3.3 Indentation](#s3.1-indentation)
+* [3.2 Line Length](#s3.2-line-length)
+* [3.3 Indentation](#s3.3-indentation)
 * [3.4 Blank Lines](#s3.4-blank-lines)
+* [3.5 Whitespace](#s3.5-whitespace)
+* [3.6 Naming](#s3.6-naming)
+* [3.7 Method Length](#s3.7-method-length)
+* [3.8 Type Annotations](#s3.8-type-annotations)
+* [3.9 Parameters](#s3.9-parameters)
+* [3.10 Default Parameter Values](#s3.10-default-parameter-values)
+* [3.11 Return Value Type](#s3.11-return-value-type)
+* [3.12 Comments and Docstrings](#s3.12-comments-and-docstrings)
 
 <a id="s1-introduction"></a>
 
