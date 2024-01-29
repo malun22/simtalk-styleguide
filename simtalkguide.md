@@ -19,12 +19,12 @@ SimTalk 2.0 enables easier formatting and less code. That’s why this style gui
 
 <a id="s2-simtalk-language-rules"></a>
 
-## SimTalk Language Rules
+## 2 SimTalk Language Rules
 
 <a id="s2.1-default-parameter-values"></a>
 
-### Default Parameter Values
+### 2.1 Default Parameter Values
 
 <a id="s2-simtalk-style-rules"></a>
 
-## SimTalk Style Rules
+## 3 SimTalk Style Rules
