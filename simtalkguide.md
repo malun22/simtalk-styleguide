@@ -25,13 +25,13 @@ SimTalk 2.0 enables easier formatting and less code. That’s why this style gui
 
 ### 2.1 Default Parameter Values
 
-Is okay. You can specify values for variables at the end of a function’s parameter list.
+It's permissible to specify values for variables at the end of a function's parameter list.
 
 ```python
 param x: string, y:integer := 4
 ```
 
-If the method is called with only one argument, y is set to 4. If it is called with two arguments, y has the value of the second argument.
+If the method is invoked with a single argument, y will be assigned the value of 4. If it's called with two arguments, y takes on the value of the second argument.
 
 <a id="s2-simtalk-style-rules"></a>
 
