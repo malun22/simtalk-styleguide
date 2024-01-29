@@ -45,7 +45,7 @@ SimTalk 2.0 enables easier formatting and less code. That’s why this style gui
 
 It's permissible to specify values for variables at the end of a function's parameter list.
 
-```python
+```
 param x: string, y:integer := 4
 ```
 
@@ -61,19 +61,39 @@ As outlined, utilizing ["byref"](https://docs.sw.siemens.com/de-DE/doc/297028302
 
 ### 2.3 True/False Evaluations
 
+Prefer to use worded Boolean comparisons for enhanced readability and clarity in your code. Instead of relying solely on symbols like "=" or "/=", consider using their worded equivalents such as "not". This practice makes the code more understandable, especially for those who may not be familiar with symbolic representations.
+
+```
+Yes:
+if not isObject(truck)
+    return false
+elseif isObject(truck)
+    return true
+end
+```
+
+```
+No:
+if isObject(truck) = false
+    return false
+elseif isObject(truck) = true
+    return true
+end
+```
+
 <a id="s2.4-strings"></a>
 
 ### 2.4 Strings
 
 Utilize the `to_str()` method for string formatting, even when all parameters are strings. Concatenating two strings with the + operator is permissible. Avoid exceeding this method of string concatenation.
 
-```python
+```
 Yes:
 x = to_str(“root.”, objectName, “.stats”)
 x = object + “.stats”
 ```
 
-```python
+```
 No:
 x = “root.” + objectName + “.stats”
 ```
@@ -84,13 +104,13 @@ x = “root.” + objectName + “.stats”
 
 In SimTalk, parentheses aren't mandatory for method calls when no parameters are passed. However, they should be employed for methods that don't function like attributes. Even if the method executes code, it's treated as an attribute when used in this manner.
 
-```python
+```
 Yes:
 truck.getColor
 truck.driveToHome()
 ```
 
-```python
+```
 No:
 truck.getColor()
 truck.driveToHomePosition
@@ -120,14 +140,14 @@ With SimTalk 2.0 it is not required to terminate lines with semicolons. So don't
 
 When structuring code, it's recommended to indent code blocks using either a tabulator or four spaces. Consistent indentation enhances code readability and maintains uniformity across projects. This practice also aids in debugging and understanding code structure more effectively. Indent code blocks with tabulator or 4 spaces.
 
-```python
+```
 Yes:
 if x > 4
     x += 1
 end
 ```
 
-```python
+```
 No:
 if x > 4
 x + = 1
@@ -146,26 +166,26 @@ Ensure one blank space between top-level definitions, including docstrings or pa
 
 Adhere to standard typographic rules regarding the use of spaces around punctuation marks. Ensure there is no whitespace inside parentheses, brackets, or braces to maintain consistency and readability in code formatting.
 
-```python
+```
 Yes:
 truck.returnHome(lastStations[1], [Station1, Station2])
 ```
 
-```python
+```
 No:
 truck.returnHome(lastStations[ 1 ], [ Station1, Station2 ])
 ```
 
 No whitespace before a comma, semicolon, or colon. Do use whitespace after a comma, or colon, except at the end of the line.
 
-```python
+```
 Yes:
 if x > 4:
     print(to_str(x, y))
 end
 ```
 
-```python
+```
 No:
 if x > 4:
     print( to_str( x , y))
@@ -174,19 +194,19 @@ end
 
 No whitespace before the open parentheses / bracket that starts an argument list or indexing.
 
-```python
+```
 Yes:
 truck.returnHome(4)
 ```
 
-```python
+```
 No:
 truck.returnHome( 4 )
 ```
 
 Surround operators of each kind with a single space on either side of the assignment
 
-```python
+```
 Yes:
 x := 4
 x > y
@@ -194,7 +214,7 @@ x += 10
 x: integer := 4
 ```
 
-```python
+```
 No:
 x:=4
 x>y
@@ -224,13 +244,13 @@ It's advisable to favor small, focused methods for improved code maintainability
 
 With SimTalk, type annotations are essential, and there should be no whitespace before the colon following the variable name. After a whitespace, the type annotation should be placed. For variables with default values, ensure adherence to the whitespace rules for operators to maintain consistency and readability in your code.
 
-```python
+```
 Yes:
 var variableName:integer
 var variableName:integer := 4
 ```
 
-```python
+```
 No:
 var variableName : integer:=4
 ```
@@ -241,12 +261,12 @@ var variableName : integer:=4
 
 Position parameter definitions immediately after the docstring without inserting a blank line in between. While it's feasible to write parameters of the same type without individual type annotations, it's not advisable. Opt for a type annotation for each parameter separately to enhance clarity and maintain consistency in your code.
 
-```python
+```
 Yes:
 param x:integer, y:integer, truck:object
 ```
 
-```python
+```
 No:
 param: x, y:integer, truck : object
 ```
@@ -255,12 +275,12 @@ param: x, y:integer, truck : object
 
 ### 3.10 Default Parameter Values
 
-```python
+```
 Yes:
 param x:integer := 4, y:integer := 0
 ```
 
-```python
+```
 No:
 param x:integer:=4, y:integer:=0
 ```
@@ -271,14 +291,14 @@ param x:integer:=4, y:integer:=0
 
 Specify the type of the return value immediately after the parameter list if applicable, or directly after the docstring if no parameters are required. This ensures clear documentation and comprehension of the function's behavior and output.
 
-```python
+```
 Yes:
 -> boolean
 OR:
 param x:integer := 4, y:integer := 0 -> boolean
 ```
 
-```python
+```
 No:
 ->boolean
 ```
