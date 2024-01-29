@@ -28,11 +28,7 @@
 
 ## Introduction
 
-SimTalk is a programing language by Siemens AG used to extend functionality of Tecnomatix Plant Simulation.
-It is to mention that this document is neither connected to Siemens AG in any way nor an official release.
-The guide is oriented on the official docs and example models provided by Siemens AG.
-With the release of SimTalk 2.0 a lot of changes in the were made, which can be found [here](https://docs.sw.siemens.com/de-DE/doc/297028302/PL20230511801658226.PlantSimulation/SimTalk_20_and_SimTalk_10_Compared).
-SimTalk 2.0 enables easier formatting and less code. That’s why this style guide refers to version 2.0.
+SimTalk is a programming language developed by Siemens AG primarily utilized to extend the functionality of Tecnomatix Plant Simulation. It's important to note that this document is neither affiliated with Siemens AG nor an official release. The guide draws inspiration from the official documentation and example models provided by Siemens AG. With the introduction of SimTalk 2.0, significant changes have been implemented, detailed in the release notes accessible [here](https://docs.sw.siemens.com/de-DE/doc/297028302/PL20230511801658226.PlantSimulation/SimTalk_20_and_SimTalk_10_Compared). SimTalk 2.0 introduces simplified formatting and reduced code, which is why this style guide pertains specifically to version 2.0.
 
 <a id="s2-simtalk-language-rules"></a>
 
