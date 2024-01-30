@@ -41,7 +41,7 @@ SimTalk is a programming language developed by Siemens AG primarily utilized to 
 It's permissible to specify values for variables at the end of a function's parameter list.
 
 ```
-param x: string, y:integer := 4
+param x: string, y: integer := 4
 ```
 
 If the method is invoked with a single argument, y will be assigned the value of 4. If it's called with two arguments, y takes on the value of the second argument.
@@ -202,7 +202,7 @@ Yes:
 x := 4
 x > y
 x += 10
-x:integer := 4
+x: integer := 4
 ```
 
 ```
@@ -237,8 +237,8 @@ With SimTalk, type annotations are essential, and there should be no whitespace 
 
 ```
 Yes:
-var variableName:integer
-var variableName:integer := 4
+var variableName: integer
+var variableName: integer := 4
 ```
 
 ```
@@ -254,7 +254,7 @@ Position parameter definitions immediately after the docstring without inserting
 
 ```
 Yes:
-param x:integer, y:integer, truck:object
+param x: integer, y: integer, truck: object
 ```
 
 ```
@@ -268,12 +268,12 @@ param: x, y:integer, truck : object
 
 ```
 Yes:
-param x:integer := 4, y:integer := 0
+param x: integer := 4, y: integer := 0
 ```
 
 ```
 No:
-param x:integer:=4, y:integer:=0
+param x: integer:=4, y:integer:=0
 ```
 
 <a id="s3.11-return-value-type"></a>
@@ -286,7 +286,7 @@ Specify the type of the return value immediately after the parameter list if app
 Yes:
 -> boolean
 OR:
-param x:integer := 4, y:integer := 0 -> boolean
+param x: integer := 4, y: integer := 0 -> boolean
 ```
 
 ```
