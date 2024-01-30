@@ -302,7 +302,7 @@ No:
 
 ### 3.12.1 Block and Inline Comments
 
-Comments should be used in tricky parts of code. Do not use the ´--´ operator for comments, instead use ´//´.
+Comments should be used in tricky parts of code. Do not use the `--` operator for comments, instead use `//`.
 
 ```
 // This section calculates the minimum distance
