@@ -195,7 +195,7 @@ No:
 truck.returnHome( 4 )
 ```
 
-Surround operators of each kind with a single space on either side of the assignment except colons before type annotations.
+Surround operators of each kind with a single space on either side of the assignment except colons before type annotations. Do not use a whitespace before the colon.
 
 ```
 Yes:
