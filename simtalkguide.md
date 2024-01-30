@@ -195,14 +195,14 @@ No:
 truck.returnHome( 4 )
 ```
 
-Surround operators of each kind with a single space on either side of the assignment
+Surround operators of each kind with a single space on either side of the assignment except colons before type annotations.
 
 ```
 Yes:
 x := 4
 x > y
 x += 10
-x: integer := 4
+x:integer := 4
 ```
 
 ```
